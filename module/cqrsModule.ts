@@ -1,9 +1,5 @@
-import {Module, module, IModuleParams, IModuleOptions, Discovery} from "@appolo/engine";
-import {inject} from "@appolo/inject";
-import {Reflector} from "@appolo/utils";
+import {Module, module, IModuleParams, IModuleOptions} from "@appolo/engine";
 import {CommandsBus, EventsBus, IOptions} from "../index";
-import {CommandHandlerSymbol} from "./src/decorators/decorators";
-import {IHandlerMetadata} from "./src/interfaces/IHandlerMetadata";
 import {QueryBus} from "./src/query/queryBus";
 
 @module()
