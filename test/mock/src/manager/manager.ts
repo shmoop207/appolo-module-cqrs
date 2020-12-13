@@ -1,4 +1,4 @@
-import {define, singleton, initMethod, inject} from '@appolo/inject'
+import {define, singleton, init, inject} from '@appolo/inject'
 import {CommandsBus, EventsBus} from "../../../../index";
 import {SomeCommand} from "../comands/someCommand";
 import {QueryBus} from "../../../../module/src/query/queryBus";
@@ -17,7 +17,7 @@ export class Manager {
     public event2Handled: string;
     public event3Handled: string;
 
-    @initMethod()
+    @init()
     private async init() {
         await this.commandsBus.execute(new SomeCommand("aa"))
 

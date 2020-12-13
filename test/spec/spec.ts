@@ -15,7 +15,7 @@ describe("CQRS module Spec", function () {
         app = createApp({root: process.cwd() + '/test/mock/', environment: "production", port: 8182});
 
 
-        await app.module(CqrsModule.for({}));
+        await app.module.use(CqrsModule.for({}));
 
         await app.launch();
 

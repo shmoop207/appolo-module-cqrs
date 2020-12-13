@@ -1,4 +1,4 @@
-import {define, singleton, inject, initMethod, Define, Injector} from '@appolo/inject'
+import {define, singleton, inject, init, Define, Injector} from '@appolo/inject'
 import {CommandHandlerSymbol} from "../decorators/decorators";
 import {BaseBus} from "../base/baseBus";
 import {Command, ICommandCtr} from "../interfaces/ICommand";

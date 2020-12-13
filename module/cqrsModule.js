@@ -15,8 +15,8 @@ let CqrsModule = CqrsModule_1 = class CqrsModule extends engine_1.Module {
             queryBusId: "queryBus"
         };
     }
-    static for(options, moduleOptions = {}) {
-        return { module: CqrsModule_1, options, moduleOptions };
+    static for(options) {
+        return { type: CqrsModule_1, options };
     }
     get exports() {
         return [

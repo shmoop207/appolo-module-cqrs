@@ -29,7 +29,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", queryBus_1.QueryBus)
 ], Manager.prototype, "queryBus", void 0);
 tslib_1.__decorate([
-    inject_1.initMethod(),
+    inject_1.init(),
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", []),
     tslib_1.__metadata("design:returntype", Promise)

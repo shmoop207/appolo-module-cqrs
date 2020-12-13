@@ -9,7 +9,7 @@ describe("CQRS module Spec", function () {
     let app;
     beforeEach(async () => {
         app = core_1.createApp({ root: process.cwd() + '/test/mock/', environment: "production", port: 8182 });
-        await app.module(index_1.CqrsModule.for({}));
+        await app.module.use(index_1.CqrsModule.for({}));
         await app.launch();
     });
     afterEach(async () => {

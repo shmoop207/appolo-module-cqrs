@@ -1,4 +1,4 @@
-import {define, singleton, inject, initMethod, Define, Injector} from '@appolo/inject'
+import {define, singleton, inject, init, Define, Injector} from '@appolo/inject'
 import {EventDispatcher, IEventOptions} from '@appolo/events'
 import {App, Discovery} from '@appolo/engine'
 import {Classes} from '@appolo/utils'
@@ -17,7 +17,7 @@ export abstract class BaseBus {
 
     protected abstract readonly Symbol: string
 
-    @initMethod()
+    @init()
     protected initialize() {
 
         this.discovery.getParent().findAllReflectData<IHandlerMetaIndex>(this.Symbol).forEach(item => {

@@ -1,4 +1,4 @@
-import {define, singleton, initMethod, inject} from '@appolo/inject'
+import {define, singleton, inject} from '@appolo/inject'
 import {command, event, query} from "../../../../index";
 import {Manager} from "../manager/manager";
 import {SomeEvent} from "./someEvent";

@@ -1,4 +1,4 @@
-import {define, singleton, inject, initMethod, Define, Injector} from '@appolo/inject'
+import {define, singleton, inject, init, Define, Injector} from '@appolo/inject'
 import {EventDispatcher, IEventOptions} from '@appolo/events'
 import {App, Discovery} from '@appolo/engine'
 import {Classes, Guid} from '@appolo/utils'
@@ -20,7 +20,7 @@ export class SagaBus {
     @inject() protected eventsBus: EventsBus;
     @inject() protected logger: Logger;
 
-    @initMethod()
+    @init()
     protected initialize() {
 
         this.discovery.getParent().findAllReflectData<ISagaMetaIndex>(this.Symbol).forEach(item => {
