@@ -18,7 +18,7 @@
     "@appolo/events": "^8.0.2",
     "@appolo/inject": "^8.0.13",
     "@appolo/logger": "^8.0.4",
-    "@appolo/utils": "^8.0.5"
+    "@appolo/utils": "^8.0.6"
   },
   "devDependencies": {
     "@types/chai": "^4.2.12",
